@@ -1,0 +1,12 @@
+{% extends "layout.html"%}
+
+    {% block content %}
+<p style="font-size:300%"><b>장르별 추천 영화</b></p>
+<p><a href="http://127.0.0.1:5000/romance"><img style="padding : 20px;" src="{{ url_for('static', filename='로맨스.png') }}" width="143px;" height="190px;" ></a>
+    <a href="http://127.0.0.1:5000/action"><img style="padding : 20px;" src="{{ url_for('static', filename='액션.png') }}" width="143px;" height="190px;"></a>
+    <a href="http://127.0.0.1:5000/horror"><img style="padding : 20px;" src="{{ url_for('static', filename='공포.png') }}" width="143px;" height="190px;"></a>
+    <a href="http://127.0.0.1:5000/thriller"><img style="padding : 20px;" src="{{ url_for('static', filename='스릴러.png') }}" width="143px;" height="190px;"></a>
+    <a href="http://127.0.0.1:5000/anime"><img style="padding : 20px;" src="{{ url_for('static', filename='애니.png') }}" width="143px;" height="190px;"></a></p>
+    <p style="font-size : 30px; word-spacing : 95px;">로맨스 액션 공포 스릴러 애니메이션</p>
+
+    {% endblock %}
